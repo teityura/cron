@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ID=mydnsxxxxx
+PASS=hogefuga
+
+# teityura.wjg.jp
+wget -q -O - "https://${ID}:${PASS}@www.mydns.jp/login.html" > /dev/null
+
+# nslookup teityura.wjg.jp
+
+exit 0

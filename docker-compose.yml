@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cron:
+    build:
+      context: .
+    image: teityura/cron
+    volumes:
+      - ./etc/crontabs:/etc/crontabs
+      - ./etc/periodic:/etc/periodic
